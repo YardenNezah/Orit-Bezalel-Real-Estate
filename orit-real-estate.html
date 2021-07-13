@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orit Bezalel Real Estate </title>
+    <link href="orit-real-estate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+    <meta name=viewport content="width=700">
+</head>
+
+<body>
+    <div class="topLineContainer">
+        <div class="businessLogo">
+            <img src="cuts/logo.svg" alt="logo">
+        </div>
+        <div class="buyAndRentBtn">
+            <a href="rent.html" class="rentBtn">
+                השכרה
+            </a>
+            <div class="boundaryLine"></div>
+            <a href="buy.html" class="buyBtn">
+                קנייה
+            </a>
+        </div>
+        <div class="rightTopLine">
+            <div class="appsLogo">
+                <div class="instagram">
+                    <a href="https://instagram.com/orit_bezalel?utm_medium=copy_link"> <img src="cuts/instagram.svg"
+                            alt="instagram logo" class="instagramLogo"></a>
+                    <a href="https://instagram.com/orit_bezalel?utm_medium=copy_link"> <img
+                            src="cuts/instagram_hover.svg" alt="instagram logo" class="instagramLogoHover"></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/"> <img src="cuts/facebook.svg" alt="facebook logo"
+                            class="facebookLogo"></a>
+                    <a href="https://www.facebook.com/"> <img src="cuts/facebook_hover.svg" alt="facebook logo"
+                            class="facebookLogoHover"></a>
+                </div>
+            </div>
+            <div class="listLogo">
+                <i class="bi bi-list" onclick="openNavBar()"></i>
+                <div class="navBar">
+                    <i class="bi bi-x" onclick="closeNavBar()"></i>
+                    <a href="orit-real-estate.html">דף הבית</a>
+                    <a href="about-us.html">הסיפור שלנו</a>
+                    <a href="buy.html">קנייה</a>
+                    <a href="rent.html">השכרה</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainPage">
+        <div class="mainText">
+            <h1> Exclusive Spaces
+                <br>
+                For A Lifetime
+                <br>
+            </h1>
+            <h2> תיווך ונכסי יוקרה </h2>
+        </div>
+    </div>
+
+    <div class="radioInput">
+        <input class="form-check-input" onclick="chooseRadio()" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"></label>
+        <input class="form-check-input" onclick="chooseRadio()" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2"></label>
+        <input class="form-check-input" onclick="chooseRadio()" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3"></label>
+    </div>
+
+    <a href="about-us.html"> <i class="arrow"></i> </a>
+
+</body>
+<script>
+    var navStyle = document.querySelector('.navBar').style;
+    var bodyStyle = document.body.style;
+
+    function openNavBar() {
+        navStyle.width = '200px';
+    }
+
+    function closeNavBar() {
+        navStyle.width = '0';
+    }
+
+    function chooseRadio() {
+        if (document.getElementById('flexRadioDefault1').checked) {
+            bodyStyle.backgroundImage = 'url(main_top_banner/desktop2.jpg)';
+            bodyStyle.backgroundRepeat = 'no-repeat';
+            bodyStyle.backgroundSize = 'cover';
+        }
+        else if (document.getElementById('flexRadioDefault2').checked) {
+            bodyStyle.backgroundImage = 'url(main_top_banner/desktop.jpg)';
+            bodyStyle.backgroundRepeat = 'no-repeat';
+            bodyStyle.backgroundSize = 'cover';
+        }
+        else if (document.getElementById('flexRadioDefault3').checked) {
+            bodyStyle.backgroundImage = 'url(about_us_section/about_us_picture.png)';
+            bodyStyle.backgroundColor = '#302c2c';
+            bodyStyle.backgroundSize = '30%';
+            bodyStyle.backgroundPosition = 'center';
+        }
+    }
+</script>
+
+</html>

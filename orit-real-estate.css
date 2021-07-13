@@ -1,0 +1,176 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    text-align: center;
+    background-image: url(main_top_banner/desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topLineContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    margin: -8px;
+    height: 65px;
+}
+
+.businessLogo {
+    padding: 10px;
+}
+
+.buyAndRentBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.rentBtn {
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.buyBtn {
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.boundaryLine {
+    height: 25px;
+    width: 2px;
+    background-color: grey;
+}
+
+.rightTopLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.listLogo {
+    width: 25px;
+    height: 25px;
+    padding-left: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.bi-list:hover, .bi-x:hover, .facebookLogo:hover, .instagramLogo:hover, .rentBtn:hover, .buyBtn:hover  {
+    color: #8f744a;
+}
+
+.instagram, .facebook {
+    position: relative;
+    display: inline-block;
+}
+
+.instagram .instagramLogoHover , .facebook .facebookLogoHover  {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.instagram:hover .instagramLogoHover, .facebook:hover .facebookLogoHover  {
+    display: inline;
+}
+
+.navBar {
+    height: 45%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.navBar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navBar a:hover {
+    color: #f1f1f1;
+}
+
+.navBar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .navBar {padding-top: 15px;}
+    .navBar a {font-size: 18px;}
+}
+
+.mainText {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-weight: 900;
+    text-shadow: 1px 1px grey;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    grid-gap: 20px;
+    font-weight: 400;
+}
+
+h2:before, h2:after {
+    content: '';
+    height: 1px;
+    background: white;
+}
+
+.radioInput {
+    top: 88%;
+    left: 47%;
+    position: absolute;
+}
+
+.arrow {
+    border: solid #8f744a;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-top: 470px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.arrow:hover {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 25px;
+    height: 25px;
+}
+
